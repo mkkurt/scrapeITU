@@ -1,0 +1,34 @@
+{
+  "name": "scrapeitu",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.js -d dist",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkkurt/scrapeITU.git"
+  },
+  "author": "Kutay Kurt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkkurt/scrapeITU/issues"
+  },
+  "homepage": "https://github.com/mkkurt/scrapeITU#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "jsdom": "^17.0.0",
+    "puppeteer": "^10.4.0",
+    "qs": "^6.10.1",
+    "tunnel": "^0.0.6"
+  }
+}
